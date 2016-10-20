@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Magician</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body ng-controller="MagicController">
+    <div class="container">
+        <div class="row head">
+            <div class="col-xs-12">
+                <h1>{{title}}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8">
+                <h2>Magicians</h2>
+                <h3 ng-model="edit" ng-repeat="x in magicians"> <button ng-click="edit(x)" class="btn btn-xs btn-warning">Edit</button>
+               <br>
+               Name: {{x.name}} <br>
+               Age: {{x.age}} <br>
+               Skills: {{x.skills}}
+               </h3>
+            </div>
+            <div class="col-xs-4">
+                <h6 ng-show="edit">
+                    <button class="btn">Done</button>
+                </h6>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="controllers/magician.js"></script>
+
+</body>
+
+</html>

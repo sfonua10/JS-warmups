@@ -1,0 +1,58 @@
+.navbar {
+    background-color: #2c3e50;
+}
+.nav a{
+    color: white !important;
+}
+
+.nav{
+    color: white !important;
+}
+
+.body {
+    background-color: #18bc9c;
+}
+
+.img-responsive {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content {
+    background-color: #18bc9c;
+}
+
+.navbar-inverse {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+h1, h3, i {
+    text-align: center;
+    color: white;
+}
+
+.fa-star {
+    text-align: center;
+    margin: auto;
+}
+
+.content{
+    text-align: center;
+}
+
+hr {
+  display: inline-block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 22em;
+   max-height: 0;
+   font-size: 5px;
+   line-height: 0;
+   clear: both;
+   border: solid white;
+}
+
